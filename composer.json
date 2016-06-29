@@ -1,0 +1,35 @@
+{
+    "name": "/wordpress-composer-skeleton",
+    "description": "WordPress stack via Composer",
+    "authors": [
+        {
+            "name": "Thomas Ferney",
+            "email": "thomas.ferney@agencearcange.fr"
+        }
+    ],
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://wpackagist.org"
+        }
+    ],
+    "config": {
+        "vendor-dir": "vendor"
+    },
+    "require": {
+        "php": ">=5.5",
+        "johnpbloch/wordpress": ">=4.5",
+        "wpackagist-theme/twentysixteen": "1.*"
+    },
+    "require-dev": {
+        "wpackagist-plugin/debug-bar": "0.8.*"
+    },
+    "extra": {
+        "wordpress-install-dir": "public/wp",
+        "installer-paths": {
+            "public/content/mu-plugins/{$name}/": ["type:wordpress-muplugin"],
+            "public/content/plugins/{$name}/": ["type:wordpress-plugin"],
+            "public/content/themes/{$name}/": ["type:wordpress-theme"]
+        }
+    }
+}
