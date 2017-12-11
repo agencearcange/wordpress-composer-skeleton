@@ -60,7 +60,7 @@ app_env: PROD
 ```
 
 
-**> Send to your prod server via FTP or your favorite deployment tool :thumbsup:**
+**> Send to your prod server via FTP or with your favorite deployment tool :thumbsup:**
 
 ## Contribution
 
