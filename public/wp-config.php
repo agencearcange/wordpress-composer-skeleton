@@ -101,8 +101,8 @@ define('DB_COLLATE', '');
  *
  * @since 2.6.0
  */
-if (file_exists(__DIR__ . '/salts.php')) {
-    require __DIR__ . '/salt.php';
+if (file_exists(__DIR__ . '/../salts.php')) {
+    require __DIR__ . '/../salts.php';
 }
 
 
