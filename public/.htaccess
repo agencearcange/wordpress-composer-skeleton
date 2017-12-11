@@ -1,5 +1,3 @@
-SetEnv WORDPRESS_ENV DEV
-
 # BEGIN WordPress
 <IfModule mod_rewrite.c>
     RewriteEngine On
