@@ -14,15 +14,17 @@
         }
     ],
     "config": {
-        "vendor-dir": "vendor"
+        "vendor-dir": "vendor",
+        "platform": {
+            "php": "5.6"
+        }
     },
     "require": {
-        "php": ">=5.5",
-        "johnpbloch/wordpress": ">=4.5",
-        "wpackagist-theme/twentysixteen": "1.*"
+        "php": ">=5.6",
+        "johnpbloch/wordpress": "^4.9",
+        "incenteev/composer-parameter-handler": "^2.1"
     },
     "require-dev": {
-        "wpackagist-plugin/debug-bar": "0.8.*"
     },
     "extra": {
         "wordpress-install-dir": "public/wp",
@@ -30,6 +32,18 @@
             "public/content/mu-plugins/{$name}/": ["type:wordpress-muplugin"],
             "public/content/plugins/{$name}/": ["type:wordpress-plugin"],
             "public/content/themes/{$name}/": ["type:wordpress-theme"]
+        },
+        "incenteev-parameters": {
+            "file": "config/parameters.yml"
         }
+    },
+    "scripts": {
+        "post-install-cmd": [
+            "@auto-scripts"
+        ],
+        "auto-scripts": [
+            "Incenteev\\ParameterHandler\\ScriptHandler::buildParameters",
+            "php bin/generate-salts.php"
+        ]
     }
 }
