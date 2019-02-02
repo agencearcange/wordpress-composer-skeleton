@@ -8,10 +8,11 @@ This is simple a skeleton repo for a WordPress site managed by composer.phar.
 * WordPress directory : `public/wp/`
 * Custom content directory : `public/content/`
 * Configuration file : `config/`
+* Autoload your must-use plugins with [bedrock-autoloader](https://github.com/roots/bedrock/blob/master/web/app/mu-plugins/bedrock-autoloader.php)
 
 Tested with :
 
-* Wordpress 4.5.* => 4.9.*
+* Wordpress 4.5.* => 5.0.*
 * Wordpress single / multi website
 
 ## Getting Started
@@ -54,7 +55,7 @@ composer install --no-dev --prefer-dist --no-interaction --optimize-autoloader
 
 **> Set env to PROD**
 
-Edit your `config/parameters.yml` and set your settings
+Edit the `config/parameters.yml` to set `app_env`
 
 ```
 app_env: PROD
