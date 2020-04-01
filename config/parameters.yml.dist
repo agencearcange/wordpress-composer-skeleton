@@ -1,7 +1,0 @@
-parameters:
-    app_env: DEV #values = DEV/PROD
-    db_name: wordpress
-    db_user: root
-    db_password: toor
-    db_host: localhost
-    debug: true
