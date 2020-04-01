@@ -1,0 +1,16 @@
+version: '3.4'
+
+services:
+    mysql:
+        image: percona:5.7
+        environment:
+            - MYSQL_ALLOW_EMPTY_PASSWORD=true
+            - MYSQL_DATABASE=wordpress
+        volumes:
+            - ./var/database:/var/lib/mysql:rw,delegated
+        command: mysqld --sql_mode=""
+        ports:
+            - "3306:3306"
+
+volumes:
+    mysql-data:

@@ -5,6 +5,7 @@
 /public/content/mu-plugins/*
 /public/content/languages/*
 /public/content/themes/**/node_modules
+/public/content/themes/twentyfifteen/
 
 !/public/content/plugins/index.php
 !/public/content/mu-plugins/index.php
@@ -19,3 +20,4 @@
 /.env
 /config/parameters.yml
 /salts.php
+
