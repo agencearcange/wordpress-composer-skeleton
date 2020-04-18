@@ -1,5 +1,6 @@
 {
     "name": "agencearcange/wordpress-composer-skeleton",
+    "type": "project",
     "description": "WordPress stack via Composer",
     "authors": [
         {
@@ -31,7 +32,6 @@
         "vlucas/phpdotenv": "^2.2",
         "oscarotero/env": "^1.2",
         "composer/installers": "^1.7",
-        "koodimonni-language/fr_fr": "*",
         "wpackagist-theme/twentyfifteen": "*"
     },
     "require-dev": {

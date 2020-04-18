@@ -68,4 +68,4 @@ WP_ENV='production'
 
 ## Contribution
 
- You can fork it and submit your change with a pull request on develop branch !
+ You can fork it and submit your change with a pull request on master branch !

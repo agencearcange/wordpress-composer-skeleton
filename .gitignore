@@ -18,6 +18,4 @@
 ## File-based project format:
 *.iws
 /.env
-/config/parameters.yml
-/salts.php
-
+/var
