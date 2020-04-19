@@ -1,6 +1,6 @@
 # Wordpress composer skeleton
 
-This is simple a skeleton repo for a WordPress site managed by composer.phar.
+This is simple a skeleton repo for a WordPress site managed by composer.
 
 ## Specifications
 
@@ -21,7 +21,7 @@ Tested with :
 2. Install wordpress with `composer install`.
 3. Add your theme into `public/content/themes`
 4. Add any required plugins, from their [wpackagist](http://wpackagist.org/) packages or by adding your custom plugins into `public/content/plugins`
-5. Launch your local server
+5. Start your local server
 
 ### Installation
 
@@ -35,15 +35,18 @@ For change environment configuration you need to change
 **> Get wordpress and packages**
 
 ```
-composer install
+composer create-project agencearcange/wordpress-composer-skeleton
 ```
-![composer install cmd](https://i.imgur.com/aAiEOX0.png)
 
-**> Launch your local server**
+![composer install cmd](https://i.imgur.com/WUlzQd2.gif)
+
+**> Start the local server**
 
 ```
+$ cd wordpress-composer-skeleton
 $ php -S localhost:8000 -t public
 // or 
+$ cd wordpress-composer-skeleton
 $ symfony serve --no-tls
 ```
 
@@ -63,8 +66,7 @@ Edit the `.env` to set `WP_ENV`
 WP_ENV='production'
 ```
 
-
-**> Send to your prod server via FTP or with your favorite deployment tool :thumbsup:**
+**> Send to your prod server via FTP or with your favorite deployment tool  :rocket:**
 
 ## Contribution
 
