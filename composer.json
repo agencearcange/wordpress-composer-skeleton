@@ -1,6 +1,7 @@
 {
     "name": "agencearcange/wordpress-composer-skeleton",
     "type": "project",
+    "license": "MIT",
     "description": "WordPress stack via Composer",
     "authors": [
         {
