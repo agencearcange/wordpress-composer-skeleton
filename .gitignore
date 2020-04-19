@@ -19,3 +19,6 @@
 *.iws
 /.env
 /var
+
+## wp-cli
+/wp-cli.phar
