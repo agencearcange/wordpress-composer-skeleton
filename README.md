@@ -1,38 +1,26 @@
-# Wordpress composer skeleton
+# WordPress composer skeleton
 
-This is simple a skeleton repo for a WordPress site managed by composer.
-
-## Specifications
-
-* Public folder for your web server : `public`
-* WordPress directory : `public/wp/`
-* Custom content directory : `public/content/`
-* Configuration file : `config/`
-* Autoload your must-use plugins with [bedrock-autoloader](https://github.com/roots/bedrock/blob/master/web/app/mu-plugins/bedrock-autoloader.php)
+Simple, light and powerful WordPress skeleton for a WordPress site managed by composer. 
 
 Tested with :
 
-* Wordpress 4.5.* => 5.4.*
-* Wordpress single / multi website
+- Wordpress 4.5.* => 5.4.*
+- Wordpress single / multi website
 
-## Getting Started
 
-1. Create a new mysql database for wordpress (local or use `docker-compose up -d`).
-2. Install wordpress with `composer install`.
-3. Add your theme into `public/content/themes`
-4. Add any required plugins, from their [wpackagist](http://wpackagist.org/) packages or by adding your custom plugins into `public/content/plugins`
-5. Start your local server
 
-### Installation
+Specifications :
 
-This architecture can be used in **development** and **production** environment.
+- Public folder : `public`
+- WordPress directory : `public/wp/`
+- Custom content directory : `public/content/`
+- Env file : `.env`
+- Settings : `config/`
+- Autoload your must-use plugins with [bedrock-autoloader](https://github.com/roots/bedrock/blob/master/web/app/mu-plugins/bedrock-autoloader.php)
 
-For change environment configuration you need to change
-**WP_ENV** value in **.env** file.
+## Installation
 
-#### Development
-
-**> Get wordpress and packages**
+Use composer to create new project.
 
 ```
 composer create-project agencearcange/wordpress-composer-skeleton
@@ -40,7 +28,11 @@ composer create-project agencearcange/wordpress-composer-skeleton
 
 ![composer install cmd](https://i.imgur.com/WUlzQd2.gif)
 
-**> Start the local server**
+## Usage
+
+- Update environment variables in the `.env` file - [you can generate salts here](https://roots.io/salts.html)
+- Use `docker-compose up -d` or other mysql database.
+- Start your local server 
 
 ```
 $ cd wordpress-composer-skeleton
@@ -50,15 +42,25 @@ $ cd wordpress-composer-skeleton
 $ symfony serve --no-tls
 ```
 
-#### Production
+**Adding theme**
 
-**> Get wordpress and packages and optimize composer**
+Add your theme into `public/content/themes`
+
+**Adding plugin**
+
+Add any required plugins, from their [wpackagist](http://wpackagist.org/) packages or by adding your custom plugins into `public/content/plugins`
+
+```
+composer require wpackagist-plugin/contact-form-7
+```
+
+### Production
+
+Optimize composer install
 
 ```
 composer install --no-dev --prefer-dist --no-interaction --optimize-autoloader
 ```
-
-**> Set env to PROD**
 
 Edit the `.env` to set `WP_ENV`
 
@@ -66,8 +68,14 @@ Edit the `.env` to set `WP_ENV`
 WP_ENV='production'
 ```
 
-**> Send to your prod server via FTP or with your favorite deployment tool  :rocket:**
+Send to your prod server via FTP or with your favorite deployment tool  :rocket:
 
 ## Contribution
 
- You can fork it and submit your change with a pull request on master branch !
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)
+
+
