@@ -1,8 +1,9 @@
 {
     "name": "agencearcange/wordpress-composer-skeleton",
     "type": "project",
+    "keywords": ["wordpress", "composer", "wp", "wp-config"],
     "license": "MIT",
-    "description": "WordPress stack via Composer",
+    "description": "WordPress stater with Composer, easier configuration, and an improved folder structure",
     "authors": [
         {
             "name": "Thomas Ferney",
@@ -20,6 +21,7 @@
         }
     ],
     "config": {
+        "optimize-autoloader": true,
         "vendor-dir": "vendor",
         "platform": {
             "php": "7.3"
@@ -49,5 +51,10 @@
             "public/content/languages/themes/"  : ["vendor:koodimonni-theme-language"]
         },
         "wordpress-install-dir": "public/wp"
+    },
+    "scripts": {
+        "post-root-package-install": [
+            "php -r \"copy('.env.dist', '.env');\""
+        ]
     }
 }
