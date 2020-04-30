@@ -1,4 +1,6 @@
-# WordPress composer skeleton
+# [WPress composer-skeleton](https://github.com/agencearcange/wordpress-composer-skeleton)
+
+[![Packagist](https://img.shields.io/packagist/v/agencearcange/wordpress-composer-skeleton.svg)](https://packagist.org/packages/agencearcange/wordpress-composer-skeleton)
 
 Simple, light and powerful WordPress skeleton for a WordPress site managed by composer. 
 
@@ -6,8 +8,6 @@ Tested with :
 
 - Wordpress 4.5.* => 5.4.*
 - Wordpress single / multi website
-
-
 
 Specifications :
 
