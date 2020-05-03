@@ -1,3 +1,5 @@
+![wordpress-composer-skeleton](https://i.imgur.com/gXJ0EWm.png)
+
 # [WPress composer-skeleton](https://github.com/agencearcange/wordpress-composer-skeleton)
 
 [![Packagist](https://img.shields.io/packagist/v/agencearcange/wordpress-composer-skeleton.svg)](https://packagist.org/packages/agencearcange/wordpress-composer-skeleton)
@@ -35,7 +37,9 @@ composer create-project agencearcange/wordpress-composer-skeleton
 ```
 $ cd wordpress-composer-skeleton
 $ php -S localhost:8000 -t public
+
 // or 
+
 $ cd wordpress-composer-skeleton
 $ symfony serve --no-tls
 ```
