@@ -26,8 +26,6 @@ Use composer to create new project.
 composer create-project agencearcange/wordpress-composer-skeleton
 ```
 
-![composer install cmd](https://i.imgur.com/WUlzQd2.gif)
-
 ## Usage
 
 - Update environment variables in the `.env` file - [you can generate salts here](https://roots.io/salts.html)
