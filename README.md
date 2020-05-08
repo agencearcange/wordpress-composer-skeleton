@@ -56,7 +56,18 @@ Add any required plugins, from their [wpackagist](http://wpackagist.org/) packag
 composer require wpackagist-plugin/contact-form-7
 ```
 
-### Production
+## Use twig
+
+If you want to install [timber/timber](https://github.com/timber/timber) library, you can just install it with composer :
+
+```
+composer require timber/timber
+```
+
+See [the starter theme](https://github.com/timber/starter-theme) to try it.
+
+
+## Production
 
 Optimize composer install
 
