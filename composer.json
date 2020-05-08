@@ -3,7 +3,7 @@
     "type": "project",
     "keywords": ["wordpress", "composer", "wp", "wp-config"],
     "license": "MIT",
-    "description": "WordPress stater with Composer, easier configuration, and an improved folder structure",
+    "description": "WordPress starter with Composer, easier configuration, and an improved folder structure",
     "authors": [
         {
             "name": "Thomas Ferney",
