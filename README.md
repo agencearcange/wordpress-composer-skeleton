@@ -1,4 +1,4 @@
-![wordpress-composer-skeleton](https://i.imgur.com/gXJ0EWm.png)
+![wordpress-composer-skeleton](https://i.imgur.com/7RgYXQY.jpg)
 
 # [WPress composer-skeleton](https://github.com/agencearcange/wordpress-composer-skeleton)
 
