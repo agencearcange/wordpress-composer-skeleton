@@ -10,6 +10,7 @@
 !/public/content/plugins/index.php
 !/public/content/mu-plugins/index.php
 !/public/content/mu-plugins/bedrock-autoloader.php
+!/public/content/mu-plugins/disallow-indexing.php
 !/public/content/themes/index.php
 
 ### Intellij ###

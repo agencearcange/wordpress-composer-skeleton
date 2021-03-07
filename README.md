@@ -8,7 +8,7 @@ Simple, light and powerful WordPress skeleton for a WordPress site managed by co
 
 Tested with :
 
-- Wordpress 4.5.* => 5.4.*
+- Wordpress 4.5.* => 5.6.*
 - Wordpress single / multi website
 
 Specifications :
