@@ -7,7 +7,7 @@ services:
             - MYSQL_ALLOW_EMPTY_PASSWORD=true
             - MYSQL_DATABASE=wordpress
         volumes:
-            - ./var/database:/var/lib/mysql:rw,delegated
+            - mysql-data:/var/lib/mysql:rw,delegated
         command: mysqld --sql_mode=""
         ports:
             - "3306:3306"
