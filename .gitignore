@@ -5,7 +5,7 @@
 /public/content/mu-plugins/*
 /public/content/languages/*
 /public/content/themes/**/node_modules
-/public/content/themes/twentyfifteen/
+/public/content/themes/twentytwentythree/
 
 !/public/content/plugins/index.php
 !/public/content/mu-plugins/index.php
